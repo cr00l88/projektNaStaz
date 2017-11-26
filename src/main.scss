@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300');
+@import './resources_scss/colors.scss';
+@import '/resources_scss/global.scss';
+@import './resources_scss/nav/index.scss';
+@import './resources_scss/main/index.scss';
+@import './resources_scss/section/index.scss';
+@import './resources_scss/footer/index.scss';
+
+.copyright {
+    background-color: rgb(34, 34, 34);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    span {
+        margin-left: 35px;
+        color: #636060;
+        font-size: 15px;
+    }
+}

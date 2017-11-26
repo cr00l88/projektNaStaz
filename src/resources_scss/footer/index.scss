@@ -1,0 +1,65 @@
+@keyframes ring {
+    20%   { transform: translateX(-5px) }
+    40%  { transform: translateX(5px) }
+    60%  { transform: translateX(-10px) }
+    80% { transform: translateX(10px) }
+    100% { transform: translateX(0px) }
+}
+footer {
+    padding: 15px 30px;
+    background-color: rgb(50, 50, 50);
+    @media(max-width: 550px) { padding: 15px; }
+    .content {
+        overflow: hidden;
+        width: 820px;
+        margin: auto;
+        margin-bottom: 15px;
+        @media(max-width: 880px) { width: auto; }
+    }
+    hr {
+        height: 2px;
+        background-color: rgb(41, 41, 41);
+    }
+    .title {
+        font-size: 40px;
+        position: relative;
+        top: 7px;
+    }
+    .header {
+        font-size: 23px;
+    }
+    form, .notification {
+        float: left;
+    }
+    @import './form.scss';
+    .notification {
+        margin-top: 20px;
+        margin-left: 20px;
+        @media(max-width: 880px) { margin-left: 0; }
+        .info {
+            width: 200px;
+            word-spacing: 6px;
+            font-size: 14px;
+            line-height: 160%;
+            @media(max-width: 880px) { width: auto; }
+        }
+    }
+    .personalData {
+        margin-top: 40px;
+        @media(max-width: 880px) {
+            margin-top: 15px;
+        }
+        div {
+            margin-top: 8px;
+            img {
+                width: 16px;
+                position: relative;
+                top: 4px;
+            }
+            span {
+                margin-left: 10px;
+                font-size: 13px;
+            }
+        }
+    }
+}

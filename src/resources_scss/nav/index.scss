@@ -1,0 +1,56 @@
+nav {
+    width: 100%;
+    min-height: 78px;
+    background-color: $navbarColor;
+    text-align: center;
+    position: relative;
+    @media(max-width: 500px){
+        padding: 20px 0;
+    }
+    #triangle {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        border-left: 57px solid transparent;
+        border-right: 57px solid transparent;
+        border-top: 28px solid $navbarColor;
+        margin-left: -57px;
+    }
+    img {
+        position: relative;
+        top: 14px;
+        width: 80px;
+        margin: 0 20px;
+        @media(max-width: 500px){
+            display: none;
+        }
+    }
+    div {
+        margin: auto;
+    }
+    a {
+        color: #fff;
+        position: relative;
+        bottom: 20px;
+        @media(max-width: 500px){
+            bottom: 0;
+            font-size: 19px;
+        }
+    }
+    span {
+        bottom: 20px;
+        position: relative;
+        margin: 0 18px;
+        color: gray;
+        @media(max-width: 500px){
+            display: block !important;
+            top: 0; bottom: 0;
+        }
+    }
+    .active {
+        color: rgb(47, 180, 151)
+    }
+    @import './lines.scss';
+}

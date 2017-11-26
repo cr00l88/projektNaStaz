@@ -1,0 +1,28 @@
+.row {
+    width: auto;
+    overflow: hidden;
+    text-align: center;
+    margin-top: -35px;
+    @media(max-width: 1200px) {
+        margin-top: -3%;
+    }
+    svg {
+        width: 230px;
+        @media(max-width: 1200px) {
+            width: 19%;
+            display: inline-block;
+        }
+    }
+}
+.row:nth-child(1) {
+    margin-top: 100px;
+    @media(max-width: 1200px) {
+        margin-top: 10%;
+    }
+}
+.row:nth-child(3) {
+    margin-bottom: 80px;
+    @media(max-width: 1200px) {
+        margin-bottom: 5%;
+    }
+}
